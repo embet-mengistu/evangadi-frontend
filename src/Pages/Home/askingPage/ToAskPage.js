@@ -27,7 +27,7 @@ function ToAskPage() {
     e.preventDefault();
     try {
       const loginRes = await axios.post(
-        "http://localhost:3000/api/questions/ask",
+        `${process.env.REACT_APP_base_url}/api/questions/ask`,
         {
           ////the name given:and the one targeted from form.name given////
           questionTitle: form.questionTitle,

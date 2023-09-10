@@ -21,7 +21,7 @@ function Home({ logout }) {
     try {
       const questionRes = await axios.get(
         // ///made route for it in question.router (getquestions function in question.controller)
-        "http://localhost:3000/api/questions/ask",
+        `${process.env.REACT_APP_base_url}/api/questions/ask`,
         {
           // ////need auth to fetch it
           headers: { "x-auth-token": userData.token },

@@ -29,7 +29,7 @@ function Login() {
     try {
       /////////posting the data coming from the form(getting updated by handleChange)
       const loginRes = await axios.post(
-        "http://localhost:3000/api/users/login",
+        `${process.env.REACT_APP_base_url}/api/users/login `,
         {
           email: form.email,
           password: form.password,

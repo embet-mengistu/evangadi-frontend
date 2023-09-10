@@ -23,11 +23,11 @@ function SignUp() {
     e.preventDefault();
     try {
       // ////posts it from the information gotten from form(its signinup)
-      await axios.post("http://localhost:3000/api/users", form);
+      await axios.post(`${process.env.REACT_APP_base_url}/api/users`, form);
 
       // ////exactly after they sign in make them login  by taking thier email and password from the form and give them token(The server will validate the user's credentials and respond with an authentication token and user data.)
       const loginRes = await axios.post(
-        "http://localhost:3000/api/users/login",
+        `${process.env.REACT_APP_base_url}/api/users/login`,
         {
           email: form.email,
           password: form.password,

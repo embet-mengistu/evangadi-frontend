@@ -26,13 +26,16 @@ function AnswerPage({ allQuestions }) {
     const fetchQuestions = async () => {
       try {
         // //fetching the questions from data base (getPosts(found in question.controller))
-        const questionRes = await fetch("http://localhost:3000/api/questions", {
-          method: "GET",
-          // ///needs auth
-          headers: {
-            "x-auth-token": userData.token,
-          },
-        });
+        const questionRes = await fetch(
+          `${process.env.REACT_APP_base_url}/api/questions`,
+          {
+            method: "GET",
+            // ///needs auth
+            headers: {
+              "x-auth-token": userData.token,
+            },
+          }
+        );
 
         if (!questionRes.ok) {
           throw new Error("Network response was not ok");
@@ -76,7 +79,7 @@ function AnswerPage({ allQuestions }) {
   const fetchAnswers = async () => {
     try {
       const answerRes = await axios.get(
-        `http://localhost:3000/api/answer/${filteredquestionId}`,
+        `${process.env.REACT_APP_base_url}/api/answer/${filteredquestionId}`,
         {
           headers: { "x-auth-token": userData.token },
         }
@@ -110,7 +113,7 @@ function AnswerPage({ allQuestions }) {
     e.preventDefault();
     try {
       const loginRes = await axios.post(
-        "http://localhost:3000/api/answer/postanswer",
+        `${process.env.REACT_APP_base_url}/api/answer/postanswer`,
         {
           answerDescription: form.answerDescription,
           questionId: filteredquestionId,
