@@ -1,0 +1,26 @@
+.questionInfo h6 {
+  opacity: 0.6;
+  font-size: 15px;
+}
+.questionInfo {
+  margin-bottom: 90px;
+}
+.askQuestionDesc {
+  text-align: center;
+}
+.answerInfo {
+  display: flex;
+  /* justify-content: baseline; */
+}
+.answerTitle {
+  padding-top: 15px;
+  padding-left: 20px;
+}
+.answerInfo div h6 {
+  padding-left: 10px;
+}
+.answerFromCommunity h4 {
+  padding-top: 10px;
+  font-size: 30px;
+  padding-bottom: 10px;
+}

@@ -1,0 +1,45 @@
+.headers {
+  display: flex;
+  justify-content: space-between;
+}
+body {
+  margin-top: 150px;
+}
+.askBotton {
+  background-color: #007bff;
+  height: 35px;
+  border-radius: 4px;
+  border-color: #007bff;
+}
+.questionSection {
+  padding-top: 50px;
+}
+.displayerDiv {
+  display: flex;
+  justify-content: space-between;
+}
+.nameAndDesc {
+  display: flex;
+  justify-content: space-around;
+}
+.nameAndDesc p {
+  font-size: 18px;
+}
+.questionTitle {
+  margin-left: 20px !important;
+  padding-top: 15px;
+}
+
+.toanswerLink {
+  text-decoration: none !important;
+  color: black !important;
+}
+.questionSection h2 {
+  padding-bottom: 30px;
+}
+.nameAndDesc div p {
+  padding-left: 8px;
+}
+.arrow {
+  padding-top: 25px;
+}

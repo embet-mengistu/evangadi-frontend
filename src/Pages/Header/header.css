@@ -1,0 +1,35 @@
+#sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: gray;
+  transition: transform 0.3s ease;
+}
+
+.sidebar-hidden {
+  transform: translateX(-200px);
+}
+.navbars {
+  padding-left: 45%;
+}
+.nav-wrapper {
+  padding: 18px;
+  background-color: #ffffff;
+  border-bottom: 2px solid;
+  border-image: linear-gradient(to right, #ffffff, #ffffff);
+  border-image-slice: 1;
+  position: fixed;
+  box-shadow: 0 2px 4px rgba(81, 107, 152, 0.16);
+}
+.nav-item {
+  font-size: 13px;
+}
+.nav_button {
+  background-color: #007bff;
+  height: 30px;
+  border-radius: 5px;
+  border-color: #007bff;
+}
+.nav_button a {
+  color: white;
+  padding: 0;
+}
