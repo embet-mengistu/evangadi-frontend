@@ -64,7 +64,7 @@ function App() {
 
   useEffect(() => {
     checkLoggedIn();
-  }, []);
+  }, [checkLoggedIn]);
 
   return (
     <Router>
